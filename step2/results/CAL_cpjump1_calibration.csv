@@ -1,0 +1,223 @@
+statistic,time_h,compound_set,n_compounds,value,ci_low,ci_high,p,n_pairs,null_mean,n_boot,note,n_perm_classes,n_distinct_perms,primary
+mantel_r_cross,24,all,306.0,0.3362674702005423,0.2983860784832396,0.3765677878451345,0.0001,46663.0,-4.019458262529686e-05,1000.0,Spearman Mantel A549 vs U2OS; p from 9999 joint row/col permutations,,,False
+mantel_r_cross_within_target_null,24,all,306.0,0.3362674702005423,0.2983860784832396,0.3765677878451345,0.0001,46663.0,0.1780904683050118,1000.0,p from 9999 permutations within JUMP-Target `target` classes (146 classes with >1 member; singletons fixed; 8.92e+43 distinct permutations),146.0,8.92029807941225e+43,False
+rel_half_A549,24,all,306.0,0.5904576184625195,0.5514737360738888,0.6291695253411589,,46663.0,,1000.0,"split-half Mantel Spearman within A549, mean over 100 random splits (sd 0.007)",,,False
+rel_SB_A549,24,all,306.0,0.7425002862173836,0.7109030881991917,0.7723806692183455,,46663.0,,1000.0,Spearman-Brown corrected to full replicate count: 2r/(1+r),,,False
+rel_half_U2OS,24,all,306.0,0.4728187673007484,0.425577578953039,0.5179306050926675,,46663.0,,1000.0,"split-half Mantel Spearman within U2OS, mean over 100 random splits (sd 0.008)",,,False
+rel_SB_U2OS,24,all,306.0,0.6420596719680436,0.5970598657356487,0.6824167102634843,,46663.0,,1000.0,Spearman-Brown corrected to full replicate count: 2r/(1+r),,,False
+attenuation_SB,24,all,306.0,0.4870223003353419,0.4320954126466042,0.5448909477441135,,46663.0,,1000.0,r_cross / sqrt(rel_SB_A549 * rel_SB_U2OS); not clipped; bootstrap draws with a non-positive reliability: 0,,,False
+attenuation_halfrel,24,all,306.0,0.6364190019515935,0.5583637928504422,0.7183645170292899,,46663.0,,1000.0,r_cross / sqrt(rel_half_A549 * rel_half_U2OS) (uncorrected reliabilities),,,False
+r_cross_over_rel_SB_A549,24,all,306.0,0.4528853071742688,0.4041602402322659,0.5050195633184503,,46663.0,,1000.0,raw ratio r_cross / rel_SB_A549,,,False
+r_cross_over_rel_SB_U2OS,24,all,306.0,0.5237324268783524,0.4646744706661943,0.5902639764679127,,46663.0,,1000.0,raw ratio r_cross / rel_SB_U2OS,,,False
+row_agreement_median,24,all,306.0,0.3280217479571639,0.306451217242721,0.3533700451707862,,,,,"median per-compound Spearman(A549 row, U2OS row); CI by bootstrap",,,False
+row_agreement_mean,24,all,306.0,0.3235798886923652,,,,,,,,,,False
+row_agreement_q25,24,all,306.0,0.2263814520631376,,,,,,,,,,False
+row_agreement_q75,24,all,306.0,0.4267185411697034,,,,,,,,,,False
+row_agreement_min,24,all,306.0,-0.1718629988665008,,,,,,,,,,False
+row_agreement_max,24,all,306.0,0.6137961224179059,,,,,,,,,,False
+row_agreement_frac_positive,24,all,306.0,0.977124183006536,,,,,,,,,,False
+mantel_r_cross,24,active,258.0,0.3526426716093935,0.308311702478009,0.4000031995362733,0.0001,33152.0,8.928161974572097e-05,1000.0,Spearman Mantel A549 vs U2OS; p from 9999 joint row/col permutations,,,False
+mantel_r_cross_within_target_null,24,active,258.0,0.3526426716093935,0.308311702478009,0.4000031995362733,0.0001,33152.0,0.2115232739101853,1000.0,p from 9999 permutations within JUMP-Target `target` classes (102 classes with >1 member; singletons fixed; 5.07e+30 distinct permutations),102.0,5.070602400912918e+30,False
+rel_half_A549,24,active,258.0,0.66766254755955,0.6268929601103359,0.7119977757317137,,33152.0,,1000.0,"split-half Mantel Spearman within A549, mean over 100 random splits (sd 0.006)",,,False
+rel_SB_A549,24,active,258.0,0.800716606050312,0.770662821706869,0.831774168903237,,33152.0,,1000.0,Spearman-Brown corrected to full replicate count: 2r/(1+r),,,False
+rel_half_U2OS,24,active,258.0,0.5650899274104135,0.5093202206452088,0.6218128575637235,,33152.0,,1000.0,"split-half Mantel Spearman within U2OS, mean over 100 random splits (sd 0.007)",,,False
+rel_SB_U2OS,24,active,258.0,0.7221181575750184,0.6749001485687881,0.7668120935996278,,33152.0,,1000.0,Spearman-Brown corrected to full replicate count: 2r/(1+r),,,False
+attenuation_SB,24,active,258.0,0.4637578912901664,0.4078103119078626,0.5230859751103629,,33152.0,,1000.0,r_cross / sqrt(rel_SB_A549 * rel_SB_U2OS); not clipped; bootstrap draws with a non-positive reliability: 0,,,False
+attenuation_halfrel,24,active,258.0,0.5741132529778238,0.5031110110475265,0.6523803961208741,,33152.0,,1000.0,r_cross / sqrt(rel_half_A549 * rel_half_U2OS) (uncorrected reliabilities),,,False
+r_cross_over_rel_SB_A549,24,active,258.0,0.4404088399625818,0.3876254722920067,0.4986478787325458,,33152.0,,1000.0,raw ratio r_cross / rel_SB_A549,,,False
+r_cross_over_rel_SB_U2OS,24,active,258.0,0.4883448337507822,0.4287887187012034,0.5524182502929933,,33152.0,,1000.0,raw ratio r_cross / rel_SB_U2OS,,,False
+row_agreement_median,24,active,258.0,0.3457626855035743,0.3187989209121346,0.3726447974165234,,,,,"median per-compound Spearman(A549 row, U2OS row); CI by bootstrap",,,False
+row_agreement_mean,24,active,258.0,0.3371398939303011,,,,,,,,,,False
+row_agreement_q25,24,active,258.0,0.2270305006334268,,,,,,,,,,False
+row_agreement_q75,24,active,258.0,0.4525788814360691,,,,,,,,,,False
+row_agreement_min,24,active,258.0,-0.1751524183331825,,,,,,,,,,False
+row_agreement_max,24,active,258.0,0.6555034612252285,,,,,,,,,,False
+row_agreement_frac_positive,24,active,258.0,0.9806201550387597,,,,,,,,,,False
+mantel_r_cross,24,matched,23.0,0.3362648453803832,0.096025871949242,0.5477622005612037,0.0001,251.0,-0.0001329317325413,1000.0,"Spearman Mantel A549 vs U2OS; p from 9999 joint row/col permutations; 21 units / 23 broad_samples, within-unit pairs dropped",,,False
+mantel_r_cross_within_target_null,24,matched,23.0,0.3362648453803832,0.096025871949242,0.5477622005612037,,251.0,0.2955858398968335,1000.0,"p from 9999 permutations within JUMP-Target `target` classes (2 classes with >1 member; singletons fixed; 4 distinct permutations); NOT TESTABLE: only 4 distinct permutations, so p >= 0.25 even under perfect agreement; 21 units / 23 broad_samples, within-unit pairs dropped",2.0,4.0,False
+rel_half_A549,24,matched,23.0,0.6949669512426485,0.4845551869396602,0.8324254004025329,,251.0,,1000.0,"split-half Mantel Spearman within A549, mean over 100 random splits (sd 0.031); 21 units / 23 broad_samples, within-unit pairs dropped",,,False
+rel_SB_A549,24,matched,23.0,0.8200359903573815,0.6527951145436539,0.9085503837895617,,251.0,,1000.0,"Spearman-Brown corrected to full replicate count: 2r/(1+r); 21 units / 23 broad_samples, within-unit pairs dropped",,,False
+rel_half_U2OS,24,matched,23.0,0.539741567065073,0.3223403720794232,0.7222251075986631,,251.0,,1000.0,"split-half Mantel Spearman within U2OS, mean over 100 random splits (sd 0.033); 21 units / 23 broad_samples, within-unit pairs dropped",,,False
+rel_SB_U2OS,24,matched,23.0,0.7010807249867047,0.4875300395805743,0.8387116129063662,,251.0,,1000.0,"Spearman-Brown corrected to full replicate count: 2r/(1+r); 21 units / 23 broad_samples, within-unit pairs dropped",,,False
+attenuation_SB,24,matched,23.0,0.4434871046996539,0.1434713411062998,0.7244017830244136,,251.0,,1000.0,"r_cross / sqrt(rel_SB_A549 * rel_SB_U2OS); not clipped; bootstrap draws with a non-positive reliability: 0; 21 units / 23 broad_samples, within-unit pairs dropped",,,False
+attenuation_halfrel,24,matched,23.0,0.5490431247459584,0.1852204387711735,0.921791534087538,,251.0,,1000.0,"r_cross / sqrt(rel_half_A549 * rel_half_U2OS) (uncorrected reliabilities); 21 units / 23 broad_samples, within-unit pairs dropped",,,False
+r_cross_over_rel_SB_A549,24,matched,23.0,0.4100610818725589,0.1300535065998649,0.676154424706132,,251.0,,1000.0,"raw ratio r_cross / rel_SB_A549; 21 units / 23 broad_samples, within-unit pairs dropped",,,False
+r_cross_over_rel_SB_U2OS,24,matched,23.0,0.4796378411156006,0.1541048974856849,0.8502750754947872,,251.0,,1000.0,"raw ratio r_cross / rel_SB_U2OS; 21 units / 23 broad_samples, within-unit pairs dropped",,,False
+row_agreement_median,24,matched,23.0,0.3201581027667984,0.1363636363636363,0.4263128176171654,,,,,"median per-compound Spearman(A549 row, U2OS row); CI by bootstrap; 21 units / 23 broad_samples, within-unit pairs dropped",,,False
+row_agreement_mean,24,matched,23.0,0.2805833108290574,,,,,,,"21 units / 23 broad_samples, within-unit pairs dropped",,,False
+row_agreement_q25,24,matched,23.0,0.1040372670807453,,,,,,,"21 units / 23 broad_samples, within-unit pairs dropped",,,False
+row_agreement_q75,24,matched,23.0,0.4873517786561264,,,,,,,"21 units / 23 broad_samples, within-unit pairs dropped",,,False
+row_agreement_min,24,matched,23.0,-0.2964426877470356,,,,,,,"21 units / 23 broad_samples, within-unit pairs dropped",,,False
+row_agreement_max,24,matched,23.0,0.6826651609260305,,,,,,,"21 units / 23 broad_samples, within-unit pairs dropped",,,False
+row_agreement_frac_positive,24,matched,23.0,0.782608695652174,,,,,,,"21 units / 23 broad_samples, within-unit pairs dropped",,,False
+mantel_r_cross,24,beyond_position,162.0,0.4214005561619295,0.3492865076815147,0.4910644629234585,0.0001,13040.0,-0.0001624696423879,1000.0,Spearman Mantel A549 vs U2OS; p from 9999 joint row/col permutations,,,False
+mantel_r_cross_within_target_null,24,beyond_position,162.0,0.4214005561619295,0.3492865076815147,0.4910644629234585,0.0001,13040.0,0.3167583028526339,1000.0,p from 9999 permutations within JUMP-Target `target` classes (50 classes with >1 member; singletons fixed; 1.13e+15 distinct permutations),50.0,1125899906842624.0,False
+rel_half_A549,24,beyond_position,162.0,0.8345905898572148,0.7939975352296572,0.869633765641953,,13040.0,,1000.0,"split-half Mantel Spearman within A549, mean over 100 random splits (sd 0.006)",,,False
+rel_SB_A549,24,beyond_position,162.0,0.9098385159842888,0.885171266538952,0.930271779372519,,13040.0,,1000.0,Spearman-Brown corrected to full replicate count: 2r/(1+r),,,False
+rel_half_U2OS,24,beyond_position,162.0,0.7793664898380779,0.7215413884073523,0.8284335222176128,,13040.0,,1000.0,"split-half Mantel Spearman within U2OS, mean over 100 random splits (sd 0.009)",,,False
+rel_SB_U2OS,24,beyond_position,162.0,0.8760044592151447,0.83825041017124,0.9061675055411746,,13040.0,,1000.0,Spearman-Brown corrected to full replicate count: 2r/(1+r),,,False
+attenuation_SB,24,beyond_position,162.0,0.4720193332728194,0.3922275959998871,0.5474783276866698,,13040.0,,1000.0,r_cross / sqrt(rel_SB_A549 * rel_SB_U2OS); not clipped; bootstrap draws with a non-positive reliability: 0,,,False
+attenuation_halfrel,24,beyond_position,162.0,0.5225014479525353,0.4348463539202618,0.6029250690356581,,13040.0,,1000.0,r_cross / sqrt(rel_half_A549 * rel_half_U2OS) (uncorrected reliabilities),,,False
+r_cross_over_rel_SB_A549,24,beyond_position,162.0,0.4631597242352909,0.3855751866983954,0.5348200794357159,,13040.0,,1000.0,raw ratio r_cross / rel_SB_A549,,,False
+r_cross_over_rel_SB_U2OS,24,beyond_position,162.0,0.4810484144561124,0.3973074258592573,0.5612337078641421,,13040.0,,1000.0,raw ratio r_cross / rel_SB_U2OS,,,False
+row_agreement_median,24,beyond_position,162.0,0.4131053025074764,0.3776910800552104,0.4512350471589602,,,,,"median per-compound Spearman(A549 row, U2OS row); CI by bootstrap",,,False
+row_agreement_mean,24,beyond_position,162.0,0.39869778374884,,,,,,,,,,False
+row_agreement_q25,24,beyond_position,162.0,0.2639198010121923,,,,,,,,,,False
+row_agreement_q75,24,beyond_position,162.0,0.555408183804923,,,,,,,,,,False
+row_agreement_min,24,beyond_position,162.0,-0.2603605935127674,,,,,,,,,,False
+row_agreement_max,24,beyond_position,162.0,0.7718685300207039,,,,,,,,,,False
+row_agreement_frac_positive,24,beyond_position,162.0,0.9629629629629628,,,,,,,,,,False
+mantel_r_cross,24,weak_tercile,102.0,0.4008530385142618,0.3317155122390859,0.4619370886132236,0.0001,5151.0,-0.0001529127148966,1000.0,Spearman Mantel A549 vs U2OS; p from 9999 joint row/col permutations,,,False
+mantel_r_cross_within_target_null,24,weak_tercile,102.0,0.4008530385142618,0.3317155122390859,0.4619370886132236,0.0001,5151.0,0.2256212700018979,1000.0,p from 9999 permutations within JUMP-Target `target` classes (31 classes with >1 member; singletons fixed; 2.15e+09 distinct permutations),31.0,2147483648.0,False
+rel_half_A549,24,weak_tercile,102.0,0.4303267928605114,0.3766298944716053,0.4798839598697431,,5151.0,,1000.0,"split-half Mantel Spearman within A549, mean over 100 random splits (sd 0.014)",,,False
+rel_SB_A549,24,weak_tercile,102.0,0.6017181458230263,0.5471766867698771,0.6485426799147105,,5151.0,,1000.0,Spearman-Brown corrected to full replicate count: 2r/(1+r),,,False
+rel_half_U2OS,24,weak_tercile,102.0,0.256511570382376,0.2064956770621641,0.3084440901371839,,5151.0,,1000.0,"split-half Mantel Spearman within U2OS, mean over 100 random splits (sd 0.013)",,,False
+rel_SB_U2OS,24,weak_tercile,102.0,0.4082916169316539,0.3423065344540755,0.4714669548144206,,5151.0,,1000.0,Spearman-Brown corrected to full replicate count: 2r/(1+r),,,False
+attenuation_SB,24,weak_tercile,102.0,0.8087297029634378,0.6907010048298772,0.9268237058739018,,5151.0,,1000.0,r_cross / sqrt(rel_SB_A549 * rel_SB_U2OS); not clipped; bootstrap draws with a non-positive reliability: 0,,,False
+attenuation_halfrel,24,weak_tercile,102.0,1.2065143920445582,1.0300679746212689,1.4075736388707516,,5151.0,,1000.0,r_cross / sqrt(rel_half_A549 * rel_half_U2OS) (uncorrected reliabilities),,,False
+r_cross_over_rel_SB_A549,24,weak_tercile,102.0,0.6661807381028497,0.5596158760369212,0.7843702615574135,,5151.0,,1000.0,raw ratio r_cross / rel_SB_A549,,,False
+r_cross_over_rel_SB_U2OS,24,weak_tercile,102.0,0.9817812119844788,0.8257058855365563,1.1672501801145143,,5151.0,,1000.0,raw ratio r_cross / rel_SB_U2OS,,,False
+row_agreement_median,24,weak_tercile,102.0,0.4163016889924286,0.3748689574839837,0.4524286546301689,,,,,"median per-compound Spearman(A549 row, U2OS row); CI by bootstrap",,,False
+row_agreement_mean,24,weak_tercile,102.0,0.3901314422099648,,,,,,,,,,False
+row_agreement_q25,24,weak_tercile,102.0,0.2934362259755387,,,,,,,,,,False
+row_agreement_q75,24,weak_tercile,102.0,0.5067850902737333,,,,,,,,,,False
+row_agreement_min,24,weak_tercile,102.0,-0.0630518345952242,,,,,,,,,,False
+row_agreement_max,24,weak_tercile,102.0,0.6901921956901572,,,,,,,,,,False
+row_agreement_frac_positive,24,weak_tercile,102.0,0.9705882352941176,,,,,,,,,,False
+mantel_r_cross,24,strong_tercile,102.0,0.4708016942026963,0.377722770997018,0.5475655942761216,0.0001,5150.0,0.0004294852075545,1000.0,Spearman Mantel A549 vs U2OS; p from 9999 joint row/col permutations,,,False
+mantel_r_cross_within_target_null,24,strong_tercile,102.0,0.4708016942026963,0.377722770997018,0.5475655942761216,0.0001,5150.0,0.3561558813734995,1000.0,p from 9999 permutations within JUMP-Target `target` classes (27 classes with >1 member; singletons fixed; 1.34e+08 distinct permutations),27.0,134217728.0,False
+rel_half_A549,24,strong_tercile,102.0,0.9263039174761256,0.8954273187925809,0.9488816354752198,,5150.0,,1000.0,"split-half Mantel Spearman within A549, mean over 100 random splits (sd 0.006)",,,False
+rel_SB_A549,24,strong_tercile,102.0,0.961742235036083,0.9448289666572712,0.9737704108798374,,5150.0,,1000.0,Spearman-Brown corrected to full replicate count: 2r/(1+r),,,False
+rel_half_U2OS,24,strong_tercile,102.0,0.904257204246086,0.869585339229949,0.9330383331551112,,5150.0,,1000.0,"split-half Mantel Spearman within U2OS, mean over 100 random splits (sd 0.007)",,,False
+rel_SB_U2OS,24,strong_tercile,102.0,0.9497217101028012,0.9302440715813158,0.9653593693047996,,5150.0,,1000.0,Spearman-Brown corrected to full replicate count: 2r/(1+r),,,False
+attenuation_SB,24,strong_tercile,102.0,0.4926182417377938,0.3969203716632072,0.5732644321378046,,5150.0,,1000.0,r_cross / sqrt(rel_SB_A549 * rel_SB_U2OS); not clipped; bootstrap draws with a non-positive reliability: 0,,,False
+attenuation_halfrel,24,strong_tercile,102.0,0.514416959195423,0.4164018664187038,0.5961198357646209,,5150.0,,1000.0,r_cross / sqrt(rel_half_A549 * rel_half_U2OS) (uncorrected reliabilities),,,False
+r_cross_over_rel_SB_A549,24,strong_tercile,102.0,0.4895300185969607,0.3934088175086607,0.5676165196076779,,5150.0,,1000.0,raw ratio r_cross / rel_SB_A549,,,False
+r_cross_over_rel_SB_U2OS,24,strong_tercile,102.0,0.4957259470795241,0.3998004200388834,0.5763005920069989,,5150.0,,1000.0,raw ratio r_cross / rel_SB_U2OS,,,False
+row_agreement_median,24,strong_tercile,102.0,0.4735527082119977,0.4332655794991263,0.527582993593477,,,,,"median per-compound Spearman(A549 row, U2OS row); CI by bootstrap",,,False
+row_agreement_mean,24,strong_tercile,102.0,0.4313948246035677,,,,,,,,,,False
+row_agreement_q25,24,strong_tercile,102.0,0.2579004076878275,,,,,,,,,,False
+row_agreement_q75,24,strong_tercile,102.0,0.6331654047757718,,,,,,,,,,False
+row_agreement_min,24,strong_tercile,102.0,-0.2248456610366919,,,,,,,,,,False
+row_agreement_max,24,strong_tercile,102.0,0.7721840419336051,,,,,,,,,,False
+row_agreement_frac_positive,24,strong_tercile,102.0,0.9411764705882352,,,,,,,,,,False
+diag_dmso_position_mantel,24,dmso_positions,64.0,0.4906249789468239,,,0.0001,2016.0,-0.000116272774037,,cross-line Mantel over DMSO well positions (median over the 4 plates); positional-only baseline for r_cross,,,False
+diag_rep_cos_same_well_A549,24,A549_twice_plated,,0.8025625662304727,,,,168.0,,,"mean cosine, replicate pairs on different plates at the same well",,,False
+diag_rep_cos_diff_well_A549,24,A549_twice_plated,,0.7578724619341415,,,,168.0,,,"mean cosine, replicate pairs on different plates at different wells",,,False
+diag_dmso_position_frac_reproducible_A549,24,A549_dmso_positions,64.0,0.453125,,,,,,,fraction of DMSO well positions (pseudo-compounds) with replicate-mAP p < 0.05; mean mAP 0.093,,,False
+diag_norm_ratio_dmso_position_over_treated_A549,24,A549_dmso_positions,64.0,0.6271066069602966,,,,,,,median DMSO-position consensus norm 3.333 / median treated consensus norm 5.316,,,False
+diag_rep_cos_same_well_U2OS,24,U2OS_twice_plated,,0.7502084631929831,,,,144.0,,,"mean cosine, replicate pairs on different plates at the same well",,,False
+diag_rep_cos_diff_well_U2OS,24,U2OS_twice_plated,,0.699229684630638,,,,144.0,,,"mean cosine, replicate pairs on different plates at different wells",,,False
+diag_dmso_position_frac_reproducible_U2OS,24,U2OS_dmso_positions,64.0,0.359375,,,,,,,fraction of DMSO well positions (pseudo-compounds) with replicate-mAP p < 0.05; mean mAP 0.108,,,False
+diag_norm_ratio_dmso_position_over_treated_U2OS,24,U2OS_dmso_positions,64.0,0.6442084908485413,,,,,,,median DMSO-position consensus norm 3.564 / median treated consensus norm 5.532,,,False
+mantel_r_cross,48,all,306.0,0.2868369735087108,0.253410511743096,0.319756129627231,0.0001,46663.0,-7.572554816646105e-05,1000.0,Spearman Mantel A549 vs U2OS; p from 9999 joint row/col permutations,,,True
+mantel_r_cross_within_target_null,48,all,306.0,0.2868369735087108,0.253410511743096,0.319756129627231,0.0001,46663.0,0.1599817591712947,1000.0,p from 9999 permutations within JUMP-Target `target` classes (146 classes with >1 member; singletons fixed; 8.92e+43 distinct permutations),146.0,8.92029807941225e+43,True
+rel_half_A549,48,all,306.0,0.7160221614464125,0.6797938676452066,0.7493268805708945,,46663.0,,1000.0,"split-half Mantel Spearman within A549, mean over 100 random splits (sd 0.006)",,,True
+rel_SB_A549,48,all,306.0,0.8345138862809172,0.8093777223908601,0.856703099722705,,46663.0,,1000.0,Spearman-Brown corrected to full replicate count: 2r/(1+r),,,True
+rel_half_U2OS,48,all,306.0,0.4812491285674959,0.4373481770415579,0.5239305446620804,,46663.0,,1000.0,"split-half Mantel Spearman within U2OS, mean over 100 random splits (sd 0.007)",,,True
+rel_SB_U2OS,48,all,306.0,0.6497882351943162,0.6085486886379343,0.6876042303841785,,46663.0,,1000.0,Spearman-Brown corrected to full replicate count: 2r/(1+r),,,True
+attenuation_SB,48,all,306.0,0.3895223894853272,0.3470257925711613,0.4315262078779777,,46663.0,,1000.0,r_cross / sqrt(rel_SB_A549 * rel_SB_U2OS); not clipped; bootstrap draws with a non-positive reliability: 0,,,True
+attenuation_halfrel,48,all,306.0,0.4886376438987279,0.43156664732993,0.5438391165627343,,46663.0,,1000.0,r_cross / sqrt(rel_half_A549 * rel_half_U2OS) (uncorrected reliabilities),,,True
+r_cross_over_rel_SB_A549,48,all,306.0,0.3437174362514498,0.3044908656656102,0.3836530131828981,,46663.0,,1000.0,raw ratio r_cross / rel_SB_A549,,,True
+r_cross_over_rel_SB_U2OS,48,all,306.0,0.4414314663960229,0.3918668121457339,0.4891887845888056,,46663.0,,1000.0,raw ratio r_cross / rel_SB_U2OS,,,True
+row_agreement_median,48,all,306.0,0.2813657818606303,0.2597650104045069,0.2996979203674567,,,,,"median per-compound Spearman(A549 row, U2OS row); CI by bootstrap",,,True
+row_agreement_mean,48,all,306.0,0.2735563176864174,,,,,,,,,,True
+row_agreement_q25,48,all,306.0,0.1683253356485727,,,,,,,,,,True
+row_agreement_q75,48,all,306.0,0.3816207134277352,,,,,,,,,,True
+row_agreement_min,48,all,306.0,-0.0970990035358405,,,,,,,,,,True
+row_agreement_max,48,all,306.0,0.6021946742458847,,,,,,,,,,True
+row_agreement_frac_positive,48,all,306.0,0.9607843137254902,,,,,,,,,,True
+mantel_r_cross,48,active,257.0,0.3140885442863929,0.2709645127586801,0.3552935963347839,0.0001,32894.0,-9.779603837884872e-05,1000.0,Spearman Mantel A549 vs U2OS; p from 9999 joint row/col permutations,,,True
+mantel_r_cross_within_target_null,48,active,257.0,0.3140885442863929,0.2709645127586801,0.3552935963347839,0.0001,32894.0,0.1920489810135539,1000.0,p from 9999 permutations within JUMP-Target `target` classes (106 classes with >1 member; singletons fixed; 8.11e+31 distinct permutations),106.0,8.112963841460668e+31,True
+rel_half_A549,48,active,257.0,0.7757546600994394,0.7410208814793392,0.8104419628180385,,32894.0,,1000.0,"split-half Mantel Spearman within A549, mean over 100 random splits (sd 0.006)",,,True
+rel_SB_A549,48,active,257.0,0.8737182872503326,0.8512486906484759,0.8952973687496902,,32894.0,,1000.0,Spearman-Brown corrected to full replicate count: 2r/(1+r),,,True
+rel_half_U2OS,48,active,257.0,0.5761564750530921,0.5303982538934278,0.6227240671371503,,32894.0,,1000.0,"split-half Mantel Spearman within U2OS, mean over 100 random splits (sd 0.007)",,,True
+rel_SB_U2OS,48,active,257.0,0.7310904522137429,0.6931506034063194,0.7675045660331914,,32894.0,,1000.0,Spearman-Brown corrected to full replicate count: 2r/(1+r),,,True
+attenuation_SB,48,active,257.0,0.3929893921409788,0.341726780022943,0.4448540734990767,,32894.0,,1000.0,r_cross / sqrt(rel_SB_A549 * rel_SB_U2OS); not clipped; bootstrap draws with a non-positive reliability: 0,,,True
+attenuation_halfrel,48,active,257.0,0.4698072090810807,0.4084588961678773,0.5333214462219562,,32894.0,,1000.0,r_cross / sqrt(rel_half_A549 * rel_half_U2OS) (uncorrected reliabilities),,,True
+r_cross_over_rel_SB_A549,48,active,257.0,0.3594849150689713,0.3108537103629798,0.4069159985699012,,32894.0,,1000.0,raw ratio r_cross / rel_SB_A549,,,True
+r_cross_over_rel_SB_U2OS,48,active,257.0,0.4296165314911887,0.3748993771572822,0.4857644900143235,,32894.0,,1000.0,raw ratio r_cross / rel_SB_U2OS,,,True
+row_agreement_median,48,active,257.0,0.2970409418631266,0.2806434538796063,0.3272041478313115,,,,,"median per-compound Spearman(A549 row, U2OS row); CI by bootstrap",,,True
+row_agreement_mean,48,active,257.0,0.2951771307404125,,,,,,,,,,True
+row_agreement_q25,48,active,257.0,0.1778768024719615,,,,,,,,,,True
+row_agreement_q75,48,active,257.0,0.4196490901808194,,,,,,,,,,True
+row_agreement_min,48,active,257.0,-0.0639155127031357,,,,,,,,,,True
+row_agreement_max,48,active,257.0,0.6376959830624856,,,,,,,,,,True
+row_agreement_frac_positive,48,active,257.0,0.9571984435797666,,,,,,,,,,True
+mantel_r_cross,48,matched,23.0,0.5174539935496111,0.2984445873567569,0.668579688616086,0.0001,251.0,0.0001363690873218,1000.0,"Spearman Mantel A549 vs U2OS; p from 9999 joint row/col permutations; 21 units / 23 broad_samples, within-unit pairs dropped",,,True
+mantel_r_cross_within_target_null,48,matched,23.0,0.5174539935496111,0.2984445873567569,0.668579688616086,,251.0,0.4857486845250642,1000.0,"p from 9999 permutations within JUMP-Target `target` classes (2 classes with >1 member; singletons fixed; 4 distinct permutations); NOT TESTABLE: only 4 distinct permutations, so p >= 0.25 even under perfect agreement; 21 units / 23 broad_samples, within-unit pairs dropped",2.0,4.0,True
+rel_half_A549,48,matched,23.0,0.7518426636311895,0.5846195032495365,0.8537486746757869,,251.0,,1000.0,"split-half Mantel Spearman within A549, mean over 100 random splits (sd 0.025); 21 units / 23 broad_samples, within-unit pairs dropped",,,True
+rel_SB_A549,48,matched,23.0,0.8583449635514446,0.7378673407574928,0.9211050915015532,,251.0,,1000.0,"Spearman-Brown corrected to full replicate count: 2r/(1+r); 21 units / 23 broad_samples, within-unit pairs dropped",,,True
+rel_half_U2OS,48,matched,23.0,0.5477378106621134,0.3633019548335028,0.7043883184087307,,251.0,,1000.0,"split-half Mantel Spearman within U2OS, mean over 100 random splits (sd 0.031); 21 units / 23 broad_samples, within-unit pairs dropped",,,True
+rel_SB_U2OS,48,matched,23.0,0.7077914707372747,0.5329735648002502,0.826558486579753,,251.0,,1000.0,"Spearman-Brown corrected to full replicate count: 2r/(1+r); 21 units / 23 broad_samples, within-unit pairs dropped",,,True
+attenuation_SB,48,matched,23.0,0.6638778044089082,0.4246233835573817,0.8437555434370639,,251.0,,1000.0,"r_cross / sqrt(rel_SB_A549 * rel_SB_U2OS); not clipped; bootstrap draws with a non-positive reliability: 0; 21 units / 23 broad_samples, within-unit pairs dropped",,,True
+attenuation_halfrel,48,matched,23.0,0.806346860021254,0.5461654953796358,1.038355348324323,,251.0,,1000.0,"r_cross / sqrt(rel_half_A549 * rel_half_U2OS) (uncorrected reliabilities); 21 units / 23 broad_samples, within-unit pairs dropped",,,True
+r_cross_over_rel_SB_A549,48,matched,23.0,0.602850853121593,0.3771111103621653,0.7886339465025578,,251.0,,1000.0,"raw ratio r_cross / rel_SB_A549; 21 units / 23 broad_samples, within-unit pairs dropped",,,True
+r_cross_over_rel_SB_U2OS,48,matched,23.0,0.731082550359928,0.5012922345981599,0.9350262771744132,,251.0,,1000.0,"raw ratio r_cross / rel_SB_U2OS; 21 units / 23 broad_samples, within-unit pairs dropped",,,True
+row_agreement_median,48,matched,23.0,0.4884246188594014,0.4105025409373235,0.5663466967814794,,,,,"median per-compound Spearman(A549 row, U2OS row); CI by bootstrap; 21 units / 23 broad_samples, within-unit pairs dropped",,,True
+row_agreement_mean,48,matched,23.0,0.4722411803697247,,,,,,,"21 units / 23 broad_samples, within-unit pairs dropped",,,True
+row_agreement_q25,48,matched,23.0,0.3726708074534161,,,,,,,"21 units / 23 broad_samples, within-unit pairs dropped",,,True
+row_agreement_q75,48,matched,23.0,0.5695369847543761,,,,,,,"21 units / 23 broad_samples, within-unit pairs dropped",,,True
+row_agreement_min,48,matched,23.0,0.0084697910784867,,,,,,,"21 units / 23 broad_samples, within-unit pairs dropped",,,True
+row_agreement_max,48,matched,23.0,0.8193111236589498,,,,,,,"21 units / 23 broad_samples, within-unit pairs dropped",,,True
+row_agreement_frac_positive,48,matched,23.0,1.0,,,,,,,"21 units / 23 broad_samples, within-unit pairs dropped",,,True
+mantel_r_cross,48,beyond_position,162.0,0.4062099799820728,0.3401210015886973,0.4756416024965926,0.0001,13039.0,-0.0001938445911653,1000.0,Spearman Mantel A549 vs U2OS; p from 9999 joint row/col permutations,,,True
+mantel_r_cross_within_target_null,48,beyond_position,162.0,0.4062099799820728,0.3401210015886973,0.4756416024965926,0.0001,13039.0,0.3023627891086911,1000.0,p from 9999 permutations within JUMP-Target `target` classes (48 classes with >1 member; singletons fixed; 2.81e+14 distinct permutations),48.0,281474976710656.0,True
+rel_half_A549,48,beyond_position,162.0,0.8992535222190223,0.8726802873897757,0.9244543354274184,,13039.0,,1000.0,"split-half Mantel Spearman within A549, mean over 100 random splits (sd 0.006)",,,True
+rel_SB_A549,48,beyond_position,162.0,0.9469546974101336,0.9320120398299506,0.9607443711441848,,13039.0,,1000.0,Spearman-Brown corrected to full replicate count: 2r/(1+r),,,True
+rel_half_U2OS,48,beyond_position,162.0,0.7965792344876079,0.7545187442117188,0.8345416033765555,,13039.0,,1000.0,"split-half Mantel Spearman within U2OS, mean over 100 random splits (sd 0.007)",,,True
+rel_SB_U2OS,48,beyond_position,162.0,0.8867732846915553,0.8600862734260325,0.909809406138346,,13039.0,,1000.0,Spearman-Brown corrected to full replicate count: 2r/(1+r),,,True
+attenuation_SB,48,beyond_position,162.0,0.4432815822892577,0.3746372182608435,0.5158851814516984,,13039.0,,1000.0,r_cross / sqrt(rel_SB_A549 * rel_SB_U2OS); not clipped; bootstrap draws with a non-positive reliability: 0,,,True
+attenuation_halfrel,48,beyond_position,162.0,0.4799489268720914,0.4067857984368037,0.5563668933460708,,13039.0,,1000.0,r_cross / sqrt(rel_half_A549 * rel_half_U2OS) (uncorrected reliabilities),,,True
+r_cross_over_rel_SB_A549,48,beyond_position,162.0,0.4289645334597671,0.3614916957355911,0.5015580585455964,,13039.0,,1000.0,raw ratio r_cross / rel_SB_A549,,,True
+r_cross_over_rel_SB_U2OS,48,beyond_position,162.0,0.4580764745561366,0.3873194597031146,0.5314748888266214,,13039.0,,1000.0,raw ratio r_cross / rel_SB_U2OS,,,True
+row_agreement_median,48,beyond_position,162.0,0.3683934322521279,0.3328300408327582,0.3833548999309869,,,,,"median per-compound Spearman(A549 row, U2OS row); CI by bootstrap",,,True
+row_agreement_mean,48,beyond_position,162.0,0.3775190988390053,,,,,,,,,,True
+row_agreement_q25,48,beyond_position,162.0,0.2521530653324131,,,,,,,,,,True
+row_agreement_q75,48,beyond_position,162.0,0.5266383425350816,,,,,,,,,,True
+row_agreement_min,48,beyond_position,162.0,-0.2936507936507936,,,,,,,,,,True
+row_agreement_max,48,beyond_position,162.0,0.7493903841729929,,,,,,,,,,True
+row_agreement_frac_positive,48,beyond_position,162.0,0.9629629629629628,,,,,,,,,,True
+mantel_r_cross,48,weak_tercile,102.0,0.3400758277724825,0.2752449405300809,0.4065733004809698,0.0001,5151.0,2.4707268403489385e-05,1000.0,Spearman Mantel A549 vs U2OS; p from 9999 joint row/col permutations,,,True
+mantel_r_cross_within_target_null,48,weak_tercile,102.0,0.3400758277724825,0.2752449405300809,0.4065733004809698,0.0001,5151.0,0.2071917715984949,1000.0,p from 9999 permutations within JUMP-Target `target` classes (30 classes with >1 member; singletons fixed; 1.07e+09 distinct permutations),30.0,1073741824.0,True
+rel_half_A549,48,weak_tercile,102.0,0.5506721412499713,0.4949867579085314,0.6080018073289039,,5151.0,,1000.0,"split-half Mantel Spearman within A549, mean over 100 random splits (sd 0.013)",,,True
+rel_SB_A549,48,weak_tercile,102.0,0.7102367116830816,0.6621955039591361,0.7562202952218754,,5151.0,,1000.0,Spearman-Brown corrected to full replicate count: 2r/(1+r),,,True
+rel_half_U2OS,48,weak_tercile,102.0,0.2775392756483331,0.2355255306225451,0.3241407636814532,,5151.0,,1000.0,"split-half Mantel Spearman within U2OS, mean over 100 random splits (sd 0.012)",,,True
+rel_SB_U2OS,48,weak_tercile,102.0,0.4344904003166335,0.3812556264343733,0.489586562578701,,5151.0,,1000.0,Spearman-Brown corrected to full replicate count: 2r/(1+r),,,True
+attenuation_SB,48,weak_tercile,102.0,0.6121870135741031,0.494843817108743,0.7306548414841634,,5151.0,,1000.0,r_cross / sqrt(rel_SB_A549 * rel_SB_U2OS); not clipped; bootstrap draws with a non-positive reliability: 0,,,True
+attenuation_halfrel,48,weak_tercile,102.0,0.8698953025554524,0.6953423790262457,1.0523057218000649,,5151.0,,1000.0,r_cross / sqrt(rel_half_A549 * rel_half_U2OS) (uncorrected reliabilities),,,True
+r_cross_over_rel_SB_A549,48,weak_tercile,102.0,0.4788204019566782,0.3781838451211722,0.5897934340310041,,5151.0,,1000.0,raw ratio r_cross / rel_SB_A549,,,True
+r_cross_over_rel_SB_U2OS,48,weak_tercile,102.0,0.7827004406188337,0.6418427689631454,0.9357662232564106,,5151.0,,1000.0,raw ratio r_cross / rel_SB_U2OS,,,True
+row_agreement_median,48,weak_tercile,102.0,0.3562376237623762,0.3269772859638905,0.3763165404775772,,,,,"median per-compound Spearman(A549 row, U2OS row); CI by bootstrap",,,True
+row_agreement_mean,48,weak_tercile,102.0,0.3511363869951009,,,,,,,,,,True
+row_agreement_q25,48,weak_tercile,102.0,0.2670151426907396,,,,,,,,,,True
+row_agreement_q75,48,weak_tercile,102.0,0.4655532906231799,,,,,,,,,,True
+row_agreement_min,48,weak_tercile,102.0,-0.0384740827023878,,,,,,,,,,True
+row_agreement_max,48,weak_tercile,102.0,0.6377169481654048,,,,,,,,,,True
+row_agreement_frac_positive,48,weak_tercile,102.0,0.9901960784313726,,,,,,,,,,True
+mantel_r_cross,48,strong_tercile,103.0,0.5049625582882579,0.4082434688611466,0.598979694973758,0.0001,5252.0,-0.0001828146991116,1000.0,Spearman Mantel A549 vs U2OS; p from 9999 joint row/col permutations,,,True
+mantel_r_cross_within_target_null,48,strong_tercile,103.0,0.5049625582882579,0.4082434688611466,0.598979694973758,0.0002,5252.0,0.3649264180308743,1000.0,p from 9999 permutations within JUMP-Target `target` classes (28 classes with >1 member; singletons fixed; 2.68e+08 distinct permutations),28.0,268435456.0,True
+rel_half_A549,48,strong_tercile,103.0,0.9619737502847592,0.9416884899719202,0.9758241290609092,,5252.0,,1000.0,"split-half Mantel Spearman within A549, mean over 100 random splits (sd 0.007)",,,True
+rel_SB_A549,48,strong_tercile,103.0,0.9806183697871992,0.9699686578703176,0.9877641584176696,,5252.0,,1000.0,Spearman-Brown corrected to full replicate count: 2r/(1+r),,,True
+rel_half_U2OS,48,strong_tercile,103.0,0.9290081709854442,0.900539199846868,0.9497440424280524,,5252.0,,1000.0,"split-half Mantel Spearman within U2OS, mean over 100 random splits (sd 0.007)",,,True
+rel_SB_U2OS,48,strong_tercile,103.0,0.9631977561928682,0.9476670617702792,0.9742243307364996,,5252.0,,1000.0,Spearman-Brown corrected to full replicate count: 2r/(1+r),,,True
+attenuation_SB,48,strong_tercile,103.0,0.5195788137800917,0.4190209252562601,0.6173973178389766,,5252.0,,1000.0,r_cross / sqrt(rel_SB_A549 * rel_SB_U2OS); not clipped; bootstrap draws with a non-positive reliability: 0,,,True
+attenuation_halfrel,48,strong_tercile,103.0,0.5341556172314194,0.4311851896115045,0.6327078509290746,,5252.0,,1000.0,r_cross / sqrt(rel_half_A549 * rel_half_U2OS) (uncorrected reliabilities),,,True
+r_cross_over_rel_SB_A549,48,strong_tercile,103.0,0.5149429929584514,0.4149135945660019,0.6107450817670687,,5252.0,,1000.0,raw ratio r_cross / rel_SB_A549,,,True
+r_cross_over_rel_SB_U2OS,48,strong_tercile,103.0,0.5242563689975472,0.4241956351793126,0.6230262663859266,,5252.0,,1000.0,raw ratio r_cross / rel_SB_U2OS,,,True
+row_agreement_median,48,strong_tercile,103.0,0.4784196866288571,0.4306393517706996,0.5341954526691961,,,,,"median per-compound Spearman(A549 row, U2OS row); CI by bootstrap",,,True
+row_agreement_mean,48,strong_tercile,103.0,0.453048275568271,,,,,,,,,,True
+row_agreement_q25,48,strong_tercile,103.0,0.2724609982414575,,,,,,,,,,True
+row_agreement_q75,48,strong_tercile,103.0,0.6942567472052745,,,,,,,,,,True
+row_agreement_min,48,strong_tercile,103.0,-0.3720137290713651,,,,,,,,,,True
+row_agreement_max,48,strong_tercile,103.0,0.8058252427184466,,,,,,,,,,True
+row_agreement_frac_positive,48,strong_tercile,103.0,0.941747572815534,,,,,,,,,,True
+diag_dmso_position_mantel,48,dmso_positions,64.0,0.485761885663928,,,0.0001,2016.0,0.0003374165669281,,cross-line Mantel over DMSO well positions (median over the 4 plates); positional-only baseline for r_cross,,,True
+diag_rep_cos_same_well_A549,48,A549_twice_plated,,0.8710636621918928,,,,168.0,,,"mean cosine, replicate pairs on different plates at the same well",,,True
+diag_rep_cos_diff_well_A549,48,A549_twice_plated,,0.8306368543360753,,,,168.0,,,"mean cosine, replicate pairs on different plates at different wells",,,True
+diag_dmso_position_frac_reproducible_A549,48,A549_dmso_positions,64.0,0.703125,,,,,,,fraction of DMSO well positions (pseudo-compounds) with replicate-mAP p < 0.05; mean mAP 0.158,,,True
+diag_norm_ratio_dmso_position_over_treated_A549,48,A549_dmso_positions,64.0,0.4699957370758056,,,,,,,median DMSO-position consensus norm 3.451 / median treated consensus norm 7.342,,,True
+diag_rep_cos_same_well_U2OS,48,U2OS_twice_plated,,0.7549222982145699,,,,168.0,,,"mean cosine, replicate pairs on different plates at the same well",,,True
+diag_rep_cos_diff_well_U2OS,48,U2OS_twice_plated,,0.7123923212753945,,,,168.0,,,"mean cosine, replicate pairs on different plates at different wells",,,True
+diag_dmso_position_frac_reproducible_U2OS,48,U2OS_dmso_positions,64.0,0.453125,,,,,,,fraction of DMSO well positions (pseudo-compounds) with replicate-mAP p < 0.05; mean mAP 0.091,,,True
+diag_norm_ratio_dmso_position_over_treated_U2OS,48,U2OS_dmso_positions,64.0,0.690472424030304,,,,,,,median DMSO-position consensus norm 3.676 / median treated consensus norm 5.323,,,True

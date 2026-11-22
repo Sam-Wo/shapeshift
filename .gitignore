@@ -1,0 +1,27 @@
+# --- data, caches and large derived tables: never committed (re-created by run_all.py) ---
+data/
+cellcheck/data/
+step2/*_cache/
+step2/tahoe_cache/
+*.parquet
+*.npz
+*.h5ad
+*.zip
+*.csv.gz
+step2/*.csv
+step2/*.json
+step2/results/consistency_vs_agreement.csv
+step2/results/T1_lowest_active_per_unit*.csv
+step2/figures/
+overlap.csv
+*.log
+
+# --- python / OS ---
+__pycache__/
+*.py[cod]
+.pytest_cache/
+.venv/
+.ipynb_checkpoints/
+.DS_Store
+Thumbs.db
+cellcheck/*.csv

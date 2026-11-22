@@ -1,0 +1,21 @@
+ShapeShift - third-party notices
+
+The code in this repository is MIT-licensed (see LICENSE). It downloads data at run time; no third-party
+data files are redistributed here. Committed outputs are summary statistics and figures only.
+
+Data sources and their terms (details and quotes in DATA_LICENSES.md):
+- Tahoe-100M (Vevo / Tahoe Therapeutics): CC0 1.0. Zhang et al. 2025, bioRxiv, doi:10.1101/2025.02.20.639398
+- Cell Painting Gallery (cpg0016-jump, cpg0004-lincs, cpg0000-jump-pilot, cpg0036-EU-OS-bioactives): CC0 1.0.
+  Weisbart et al. 2024, Nat Methods, doi:10.1038/s41592-024-02399-z
+  JUMP-CP: Chandrasekaran et al. 2023, bioRxiv, doi:10.1101/2023.03.23.534023
+  CPJUMP1: Chandrasekaran et al. 2024, Nat Methods, doi:10.1038/s41592-024-02241-6
+  LINCS Cell Painting: Way et al. 2022, Cell Systems; Natoli et al. 2021, Zenodo, doi:10.5281/zenodo.5008187
+- jump-cellpainting/datasets metadata: BSD-3-Clause (Copyright (c) the JUMP-Cell Painting Consortium / Broad Institute).
+- jump-cellpainting/JUMP-Target metadata: MIT License (Copyright (c) the JUMP-Cell Painting Consortium).
+- EU-OPENSCREEN bioactives aggregated profiles, Zenodo record 19347244: CC BY 4.0 (attribution required).
+  Wolff et al. 2025, iScience, doi:10.1016/j.isci.2025.112445; Zenodo doi:10.5281/zenodo.19347244.
+  Changes made: per-plate robust normalisation, feature selection, whitening and consensus aggregation
+  (step2/morph_euos.py); only summary statistics are redistributed.
+- Broad Drug Repurposing Hub annotations (used at run time for name bridging and QC only): provided for
+  non-commercial research use; not redistributed here. Corsello et al. 2017, Nat Med, doi:10.1038/nm.4306
+- PubChem (NCBI): identifiers and structures retrieved via PUG REST.

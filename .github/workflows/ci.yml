@@ -1,0 +1,19 @@
+name: ci
+on:
+  push:
+  pull_request:
+jobs:
+  test:
+    runs-on: ubuntu-latest
+    timeout-minutes: 15
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.13"
+          cache: pip
+      - run: pip install -r requirements.txt
+      - name: unit tests (structure matching + statistics engine, synthetic data, CPU)
+        run: pytest -q tests
+      - name: figures from committed summary tables (no downloads)
+        run: python step2/make_figures.py --no-tahoe

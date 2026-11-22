@@ -1,0 +1,12 @@
+# Python 3.13. Pinned versions used for all published results.
+fsspec==2026.2.0
+huggingface_hub==1.4.1
+matplotlib==3.11.0
+numpy==2.2.6
+pandas==2.3.3
+pyarrow==23.0.1
+rdkit==2026.3.5
+requests==2.32.5
+scikit-learn==1.8.0
+scipy==1.16.3
+pytest==9.0.2

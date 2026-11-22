@@ -1,0 +1,12 @@
+{
+ "total_bytes_downloaded": 22516614010.0,
+ "per_pipeline_peak_disk": {
+  "cpjump1_download_summary": 250056228.0,
+  "euos_download_summary": 885926580.0,
+  "jump_download_summary": 2000000000.0,
+  "lincs_download_summary": 26780346.0,
+  "tahoe_download_summary": 1518618828.0
+ },
+ "peak_disk_upper_bound": 7493571352.0,
+ "project_disk_now": 2812189370
+}
