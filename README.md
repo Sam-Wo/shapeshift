@@ -4,6 +4,8 @@
 
 [![ci](../../actions/workflows/ci.yml/badge.svg)](../../actions/workflows/ci.yml)
 
+![Visual abstract: same compounds, two assays, two similarity maps, and how little they agree](figures/visual_abstract.svg)
+
 ## Finding
 
 I built compound × compound similarity matrices from cell morphology (three Cell Painting datasets) and from single-cell transcriptomics (Tahoe-100M), over the same compounds, and asked whether they agree beyond shared mechanism-of-action (MoA) class.
